@@ -1,0 +1,491 @@
+@import "reset";
+@import "mixin";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+
+$blue: #002aff;
+$dark-blue: #100b8c;
+$yellow: #ffde37;
+$dark-grey: #39393f;
+$grey: #a5a3af;
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+} 
+
+.navigation{
+    padding: 2rem 0;
+    nav{
+        background-color: transparent;
+        a.navbar-brand{
+            font-size: 1.35rem;
+            font-weight: 800;
+            margin: 0 2rem 0 0rem;
+            background-color: #29095e;
+            @include border-radius(50%) ;
+            padding: 10px;
+            color: #fff;
+        }
+        ul.navbar-nav{
+            margin-left: 2.1rem;
+            .nav-item{
+                margin-right: 1.5rem;
+                a.nav-link{
+                    font-size: 1.01rem;
+                    font-weight: 500;
+                    color: #4e515ebc;
+                    @include transition(all, 0.3s, ease);
+                &:hover{
+                    color: #100b8c;
+                    }
+                    .active{
+                    color: #4e515e;
+                    }
+                }
+    
+            }
+    
+        }
+    }
+}
+
+.hero-area{
+    height: 100vh;
+    position: relative;
+    .blue-hero-bg{
+        background-color: $dark-blue;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 35%;
+        overflow: hidden;
+        .panel-bg-white{
+            right: 30%;
+            bottom: -5%;
+            @include white-panel-bg;
+
+        }
+        .bg-anim-square{
+            position: absolute;
+            right: 15%;
+            top: 1%;
+            width: 50%;
+            height: 50%;
+            background-image: url("../assets/bg/download (2).png");
+            background-size: cover;
+            animation: grow-shrink 10s ease infinite;
+        }
+    }
+    .hero-header{
+        margin: 6rem 0 0;
+        .small{
+            color: $grey;
+            font-size: 16px;
+            margin: 0 0 0 5px;
+        }
+        h1{
+            font-size: 5rem;
+            font-weight: 800;
+            color: $dark-grey;
+
+        }
+        .sub-hero{
+            color: $grey;
+            font-size: 19.9px;
+            font-weight: 400;
+            letter-spacing: .35px;
+            margin: 0 0 2rem;
+        }
+        .button-hero{
+            margin: 1rem 0;
+            a.button{
+                padding: .75rem 3rem;
+                color: #fff;
+                background-color: $blue;
+                font-size: 1rem;
+                letter-spacing: 0.2px;
+                @include transition(all, 0.3s, ease);
+            &:hover{
+                background-color: $blue;
+                opacity: 0.85;
+            }
+            &:active,&:focus{
+                outline: 0;
+                box-shadow: none;
+            }
+            }
+        }
+    }
+    .left-bg-text{
+        &::before{
+            content: 'Design';
+            position: absolute;
+            left: -20%;
+            top: 20%;
+            font-size: 14rem;
+            font-weight: 800;
+            color: #f0f0f0fa;
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+.about-me{
+    position: relative;
+    height: 100vh;
+    
+    .blue-about-bg{
+        position: absolute;
+        width: 30%;
+        left: 0;
+        height: 100%;
+        background-color: $dark-blue;
+        .panel-bg-white{
+            left: 30%;
+            bottom: -1%;
+            @include white-panel-bg;
+
+        }
+    }
+    
+    .right-about{
+        position: absolute;
+        width: 30%;
+        right: 0;
+        height: 100%;
+        .circle-bg{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            &::before{
+                position: absolute;
+                content: 'O';
+                font-size: 25rem;
+                color: #1111;
+                font-weight: 800;
+                right: 0;
+                top: 1%;
+                z-index: -1;
+                line-height: 0;
+                /* bottom: 0; */
+                animation: updown 5s infinite ease;
+            }
+        }
+    }
+    .about-img{
+        img{
+            transform: scaleX(-1);
+        }
+    }
+    .about-me-text{
+        h2{
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: $dark-grey;
+        }
+        .about-text-para{
+            color: $grey;
+            line-height: 2;
+            margin-bottom: 2rem;
+        }
+        .button{
+            padding: .75rem 2rem;
+                color: #fff;
+                background-color: $blue;
+                font-size: 1rem;
+                letter-spacing: 0.2px;
+                @include transition(all, 0.3s, ease);
+            &:hover{
+                background-color: $blue;
+                opacity: 0.85;
+            }
+            &:active,&:focus{
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
+//////////////////////// services /////////////////////////////
+.heading-services {
+height: 100vh;
+position: relative;
+    .header-h{
+        margin: 8rem 0 4rem;
+        .speciality{
+            padding-left: 2rem;
+            h2{
+                font-size: 3rem;
+                font-weight: 800;
+                color: $dark-grey;
+                letter-spacing: 1px;
+            }
+        }
+        .bd-callout{
+            padding: 0 2rem;
+            line-height: 2;
+            border-left-width: .25rem;
+            color: $grey;
+            font-weight: 500;
+            border-left: 0.2rem solid #002aff;
+        }
+    }
+}
+
+.card-deck {
+    padding: 0 5rem;
+    .card{
+    border: 0px solid transparent;
+    border-radius: 10px;
+    margin: 1rem 1.25rem;
+    box-shadow: 16px 16px 25px 03px rgba(0,0,0,.10);
+    position: relative;
+    overflow: hidden;
+    border-left: 0.15rem solid #6000ff;
+    .box-card{
+        padding: 2.75rem 2rem 2rem 1.75rem;
+        z-index: 2;
+        .card-header{
+            background-color: transparent;
+            padding: 0;
+            border: 0;
+            h3{
+                font-size: 2.1rem;
+                font-weight: 500;
+                margin: 0 0 1.25rem;
+                color: #39393f;
+            }
+            
+        }
+        .body-card{
+            p{
+                margin: 0 0 1.25rem;
+                color: #a5a3af;
+                line-height: 1.5rem;
+                a{
+                    color: $blue;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+        
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            transform-origin: 0 0;
+            background-color: #6000ff;
+            z-index: 1;
+            border-radius: 50%;
+            transition: 0.45s ease all;
+            transform: scale(0);
+
+        }
+        &:hover{
+            &::before{
+                
+                border-radius: 0%;
+                transform: scale(1);
+            }
+            .card-header h3, .body-card p a{
+                color: #fff;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////// animation /////////////////////////// 
+
+/* animation background */
+
+.circles-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .circles-bg li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    border: 10px solid #ffcc00 ;
+    background:#0000;
+    animation: animate 35s linear infinite;
+    bottom: -150px;
+    border-radius: 0;
+  }
+  
+  .circles-bg li:nth-child(1){
+    left: 25%;
+    width: 45px;
+    height: 45px;
+    border-width: 10px;
+    animation-delay: 0s;
+  }
+  
+  
+  .circles-bg li:nth-child(2){
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    border: 15px solid #fff ;
+    animation-delay: 2s;
+    filter: blur(1px);
+    animation-duration: 12s;
+  }
+  
+  .circles-bg li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    border-width: 8px;
+    filter: blur(10px);
+    background-color: #fff;
+    border-radius: 50%;
+    animation-delay: 4s;
+  }
+  
+  .circles-bg li:nth-child(4){
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    border: 15px solid #fff ;
+    border-radius: 50%;
+    animation-delay: 0s;
+    filter: blur(2px);
+    box-shadow: 0 0 2px 0px #333d;
+    animation-duration: 18s;
+  }
+  
+  .circles-bg li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    filter: blur(2px);
+    opacity: 0.5;
+    animation-delay: 0s;
+  }
+  
+  .circles-bg li:nth-child(6){
+    left: 75%;
+    width: 70px;
+    height: 70px;
+    opacity: .8;
+    border-width: 10px;
+    animation-delay: 3s;
+  }
+  
+  .circles-bg li:nth-child(7){
+    left: 35%;
+    width: 50px;
+    height: 50px;
+  border-width: 8x;
+  filter: blur(.2px);
+  opacity: 0.75;
+    animation-delay: 7s;
+  }
+  
+  .circles-bg li:nth-child(8){
+    left: 50%;
+    border-radius: 50%;
+    border-color: #fffd;
+    animation-delay: 15s;
+    animation-duration: 45s;
+  }
+  
+  .circles-bg li:nth-child(9){
+    left: 20%;
+    width: 50px;
+    height: 50px;
+    border-width: 15px;
+    filter: blur(1px);
+    animation-delay: 2s;
+    animation-duration: 35s;
+  }
+  
+  .circles-bg li:nth-child(10){
+    left: 85%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+  }
+  .circles-bg li:nth-child(11){
+      left: -10%;
+  border: #4e515e99 20px solid;
+  border-radius: 50%;
+  filter: blur(5px);
+  box-shadow: 0 0 2px 1px #0009;
+  animation-duration: 5s;
+    }
+  
+  
+  
+  @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        color: #ffcc00;
+    }
+  
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        color: #ffcc00;
+        opacity: .9;
+  
+    }
+  }
+
+  @keyframes updown {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+  
+    50%{
+        transform: translateY(-50px);
+        opacity: .9;
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+  @keyframes grow-shrink {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+  
+    50%{
+        transform: scale(1.25);
+        opacity: .9;
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}

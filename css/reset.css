@@ -1,0 +1,21 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-transition: 0.5s scroll-behavior;
+  transition: 0.5s scroll-behavior;
+}
+/*# sourceMappingURL=reset.css.map */
