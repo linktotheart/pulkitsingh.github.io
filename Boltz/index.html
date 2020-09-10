@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boltz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <!-- main header  -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">Boltz</a>
+            
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">union</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">run your own exchange</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">faq</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="home">
+        <div class="container">
+           <div class="row">
+            <div class="col-lg-6">
+                <div class="hero">
+                    <div class="hero-text">
+                        <h1>Privacy first, account <br /> free crypto exchange</h1>
+                        <p>
+                            Show your crypto without giving custody of <br> your funds to sketchy exchanges. Your private <br>key should remain in your custody, all the time. 
+                        </p>
+                    </div>
+                    <!-- < feature cards > -->
+                    <div class="d-flex feat-cards">
+                        <div class="cards d-flex">
+                            <div class="icon-badge">
+                                <img src="" class="img-fluid" alt="">
+                                <span class="badge yellow">
+                                    We're fast
+                                </span>
+                            </div>
+                            <div class="card-head">
+                                <h4>We use a lightning network </h4>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Boltz doesn't and will never collect any data that could identify our users.
+                                </p>
+                            </div>
+                        </div> <!-- card 1 ends here -->
+    
+                        <div class="cards d-flex">
+                            <div class="icon-badge">
+                                <img src="" class="img-fluid" alt="">
+                                <span class="badge yellow">
+                                    We're safe
+                                </span>
+                            </div>
+                            <div class="card-head">
+                                <h4>We do not collect any data </h4>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Boltz doesn't and will never collect any data that could identify our users.
+                                </p>
+                            </div>
+                        </div> <!-- card 2 ends here -->
+                    </div>
+
+                    <!--- view demo button -->
+                    <button class="btn">
+                        View Demo
+                    </button>
+                </div>
+            </div><!--./col-lg-6-->
+
+            <div class="col-lg-6">
+               <div class="wrapper">
+                <div class="card box mb-5">
+                    <!-- tab menu steps  -->
+                    <div class="num-nav">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">
+                                    <span class="num">1</span>
+                                    <span class="text">Pick Crypto</span>
+                                </a>                                
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="num">2</span>
+                                    <span class="text">Destination</span>
+                                </a>                                
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="num">3</span>
+                                    <span class="text">Send</span>
+                                </a>                                
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="num">4</span>
+                                    <span class="text">Status</span>
+                                </a>                                
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 class="text-center">
+                        Choose which crypto you'd like to exchange
+                    </h2>
+                    <form action="#">
+                        <div class="form-row mb-2">
+                          <div class="col">
+                            <div class="form-group">
+                                <label for="send">You send</label>
+                                <input type="text" class="form-control" id="send" placeholder="Cypto">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-group">
+                                <label for="recieve">You recieve</label>
+                                <input type="text" class="form-control" id="recieve" placeholder="Lightning">
+                            </div>
+                          </div>
+                        </div>
+                         <div class="form-row mb-2">
+                            <div class="col">
+                                <select class="custom-select">
+                                    <option selected>Bitcoin</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                  </select>
+                            </div>
+                            <div class="col">
+                                <select class="custom-select">
+                                    <option selected>Lightning Bitcoin</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <!-- Spacer and text  -->
+                        <div class="d-flex helper justify-content-space-around py-4">
+                            <div class="help-text">
+                                <span class="text-muted">
+                                    Min Amount
+                                </span>
+                                0.0001BTC
+                            </div>
+                            <div class="help-text">
+                                <span class="text-muted">
+                                    Min Amount
+                                </span>
+                                0.0001BTC
+                            </div>
+                            <div class="help-text">
+                                <span class="text-muted">
+                                    Min Amount
+                                </span>
+                                0.0001BTC
+                            </div>
+                            <div class="help-text">
+                                <span class="text-muted">
+                                    Min Amount
+                                </span>
+                                0.0001BTC
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" class="btn" value="Go to next step ➔">
+                        </div>
+                    </form>
+
+
+                </div><!-- cardbox ends-->
+                <div class="d-flex">
+                    <a href="#" class="badge">I want to check status or get refund</a>
+                </div>
+               </div>
+            </div><!--./col-lg-6-->
+           </div>
+            
+        </div><!--./container-->
+    </section>
+
+</body> <!--Body ends here-->
+</html>
